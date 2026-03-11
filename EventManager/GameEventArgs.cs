@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace EventManager
+class GameEventArgs : EventArgs
 {
-    internal class GameEventArgs
+    public string EventName { get; set; }
+    public object Data { get; set; }
+
+    public GameEventArgs(string eventName, object data)
     {
+        EventName = eventName; Data = data; 
     }
 }

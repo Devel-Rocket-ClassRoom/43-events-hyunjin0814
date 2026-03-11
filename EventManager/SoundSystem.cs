@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace EventManager
+class SoundSystem
 {
-    internal class SoundSystem
+    public void SoundEvent(object sender, GameEventArgs e)
     {
+        Console.WriteLine($"[Sound] 이벤트: {e.EventName}");
     }
 }
